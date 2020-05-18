@@ -17,11 +17,11 @@ html, body {
 
 @keyframes slideRight {
     from {
-        opacity: 0;
+        color: rgba(75, 75, 75, 0.0);
         left: -2vw;
     }
     to {
-        opacity: 100;
+        color: rgba(75, 75, 75, 1.0);
         left: 0;
     }
 }
@@ -48,7 +48,7 @@ nav {
 }
 
 nav a {
-    color: rgb(75, 75, 75);
+    color: inherit;
     text-decoration: none;
 }
 
