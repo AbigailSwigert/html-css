@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <style type="text/css">
+
+        img {
+            float: right;
+            height: 100vh;
+            width: auto;
+            z-index: 1;
+        }
+
+        #bio {
+            z-index: 2;
+            width: 30vw;
+            height: auto;
+            position: absolute;
+            background-color: #fff1eb;
+            margin: 20vh auto auto 40vw;
+            padding: 20px;
+            text-align: justify;
+        }
+
+    </style>
+
 </head>
 <body>
-    <p>Hello, my name is Abigail Swigert! I Graduated from The University of North Texas in 2018 with a B.A. in Design Management. After graduation, I worked as a Graphic Designer in Downtown Dallas for 2 years. Currently, I am enrolled in a Full Stack Bootcamp with Teksystems Global Services.</p>
+    <div id="navPane" style="width: 100vw; z-index: -1;">
+
+        <header>
+            <p class="titleText">Abigail Swigert
+                <br>
+                <span class="subTitle">About Me</span>
+            </p>
+            <nav>
+                <a href="index.html">About Me</a><br>
+                <a href="gallery.html">Photo Gallery</a><br>
+                <a href="contact.html">Contact</a><br>
+            </nav>
+        </header>
+
+    </div>
+
+    <div id="bio">
+        <p>Hello, my name is Abigail Swigert! I Graduated from The University of North Texas in 2018 with a B.A. in Design Management. After graduation, I worked as a Graphic Designer in Downtown Dallas for 2 years. Currently, I am enrolled in a Full Stack Bootcamp with Teksystems Global Services.<br><br>
+        My hobbies include:
+        <ul>
+            <li>Playing video games</li>
+            <li>Reading</li>
+            <li>Cooking/Baking</li>
+            <li>Playing Board/Card Games</li>
+        </ul>
+        </p>
+
+    </div>
+   <img src="Abigail on TBird.jpg" alt="Abigail Swigert wearing sunglasses laying on the hood of a 1967 Ford Thunderbird">
 </body>
 </html>
