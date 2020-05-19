@@ -7,33 +7,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-
-    <style type="text/css">
-
-        img {
-            float: right;
-            height: 100vh;
-            width: auto;
-            z-index: 1;
-        }
-
-        #bio {
-            z-index: 2;
-            width: 30vw;
-            height: auto;
-            position: absolute;
-            background-color: #fff1eb;
-            margin: 20vh auto auto 40vw;
-            padding: 20px;
-            text-align: justify;
-        }
-
-    </style>
+    <link rel="stylesheet" media="screen and (orientation: landscape)" type="text/css" href="index.css">
+    <link rel="stylesheet" media="screen and (orientation: portrait)" type="text/css" href="responsive.css">
 
 </head>
 <body>
-    <div id="navPane" style="width: 100vw; z-index: -1;">
+    <div class="navPane" id="indexNav">
 
         <header>
             <p class="titleText">Abigail Swigert
@@ -41,9 +20,9 @@
                 <span class="subTitle">About Me</span>
             </p>
             <nav>
-                <a href="index.html">About Me</a><br>
-                <a href="gallery.html">Photo Gallery</a><br>
-                <a href="contact.html">Contact</a><br>
+                <a href="index.html">About Me</a>
+                <a href="gallery.html">Photo Gallery</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </header>
 
@@ -61,6 +40,6 @@
         </p>
 
     </div>
-   <img src="Abigail on TBird.jpg" alt="Abigail Swigert wearing sunglasses laying on the hood of a 1967 Ford Thunderbird">
+   <img id="abigailOnThunderbird" src="Abigail on TBird.jpg" alt="Abigail Swigert wearing sunglasses laying on the hood of a 1967 Ford Thunderbird">
 </body>
 </html>
