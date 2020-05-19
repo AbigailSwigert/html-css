@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 input {
-    margin: 20px;
+    margin: 5px;
 }
 
 textarea {
@@ -128,14 +128,14 @@ textarea {
 ::placeholder {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: rgb(75, 75, 75);
+    color: lightgray;
     font-size: 15px;
 }
 
 #submit {
     background-color: #fff1eb;
     width: 150px;
-    height: 5vh;
+    height: 30px;
     border: solid 3px lightgray;
     text-decoration: none;
     border-radius: 5px;

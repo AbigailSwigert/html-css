@@ -34,6 +34,7 @@ html, body {
 header {
     position: relative;
     animation: slideRight 3s;
+    height: 80vh;
 }
 
 .titleText {
@@ -50,8 +51,9 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    line-height: 500%;
+    justify-content: space-around;
     font-size: 1.5vw;
+    height: 50vh;
 }
 
 nav a {
@@ -124,7 +126,7 @@ nav a:hover {
 }
 
 input {
-    margin: 20px;
+    margin: 5px;
 }
 
 textarea {
@@ -140,14 +142,14 @@ textarea {
 ::placeholder {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: rgb(75, 75, 75);
+    color: lightgray;
     font-size: 20px;
 }
 
 #submit {
     background-color: #fff1eb;
     width: 18vw;
-    height: 5vh;
+    height: 30px;
     border: solid 3px lightgray;
     text-decoration: none;
     border-radius: 5px;
@@ -173,8 +175,12 @@ textarea {
         height: auto;
         position: absolute;
         background-color: #fff1eb;
-        margin: 60vh 0 0 5vw;
+        margin: 70vh 0 0 15vw;
         padding: 20px;
         text-align: justify;
+    }
+
+    ::placeholder {
+        font-size: 15px;
     }
 }

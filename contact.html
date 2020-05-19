@@ -32,10 +32,10 @@
         <form>
             <h2>Please fill out this form to get in touch:</h2>
 
-            <input type="text" name="firstName" id="firstName" class="names" placeholder="First Name">
-            <input type="text" name="lastName" id="lastName" class="names" placeholder="Last Name">
+            <input type="text" name="firstName" id="firstName" class="names" placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+            <input type="text" name="lastName" id="lastName" class="names" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
             <br>
-            <textarea name="messageBox" id="messageBox" placeholder="Please type your message here..."></textarea>
+            <textarea name="messageBox" id="messageBox" placeholder="Please type your message here..." onfocus="this.placeholder=''" onblur="this.placeholder='Please type your message here...'"></textarea>
             <br>
             <input type="submit" name="submit" id="submit" value="Submit">
         </form>
