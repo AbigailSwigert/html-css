@@ -6,54 +6,38 @@ html, body {
 }
 
 .navPane{
-    width: 30vw;
-    height: 100vh;
+    width: 100vw;
+    height: 30px;
     position: fixed;
     margin: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    padding-left: 3vw;
-    padding-top: 10vh;
-}
-
-@keyframes slideRight {
-    from {
-        color: rgba(75, 75, 75, 0.0);
-        left: -2vw;
-    }
-    to {
-        color: rgba(75, 75, 75, 1.0);
-        left: 0;
-    }
-}
-
-#indexNav {
-    z-index: -1;
-    width: 100vw;
+    background-image: linear-gradient(to right, #fff1eb 0%, #ace0f9 100%);
+    padding: 15px;
 }
 
 header {
-    position: relative;
-    animation: slideRight 3s;
-    height: 80vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .titleText {
     font-weight: 600;
-    font-size: 3.5vw;
-    line-height: 90%;
+    line-height: 110%;
+    width: 150px;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 10px;
 }
 
 .subTitle {
     font-weight: 400;
-    font-size: 2.5vw;
 }
+
 
 nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.5vw;
-    height: 50vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: calc(100vw - 150px);
 }
 
 nav a {
@@ -62,25 +46,25 @@ nav a {
 }
 
 nav a:hover {
-    font-size: 1.75vw;
+    font-size: 110%;
 }
 
 #abigailOnThunderbird {
-    float: right;
+    width: 100vw;
     height: 100vh;
-    width: auto;
-    z-index: 1;
+    object-fit: cover;
+    position: fixed;
+    z-index: -10;
 }
 
 #bio {
-    z-index: 2;
-    width: 30vw;
+    width: 80vw;
     height: auto;
     position: absolute;
+    margin: 90vh 0 0 5vw;
     background-color: #fff1eb;
-    margin: 20vh auto auto 35vw;
-    padding: 20px;
     text-align: justify;
+    padding: 20px;
 }
 
 #music {
@@ -96,8 +80,8 @@ nav a:hover {
 }
 
 #imgGallery {
-    width: 70vw;
-    margin: 0;
+    width: 100vw;
+    margin-top: 80px;
     padding: 0;
     float: right;
     display: flex;
@@ -112,7 +96,7 @@ nav a:hover {
     margin: 20px 0;
     max-width: 500px;
     max-height: 500px;
-    border: solid 8px lightgray;
+    border: solid 4px lightgray;
 }
 
 .annaPhoto:hover {
@@ -121,9 +105,8 @@ nav a:hover {
 }
     
 #formContainer {
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
-    float: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +114,7 @@ nav a:hover {
 }
 
 .names{
-    width: 18vw;
+    width: 130px;
     height: 5vh;
     border: solid 3px #ace0f9;
     border-radius: 5px;
@@ -145,7 +128,7 @@ textarea {
     border: solid 3px #ace0f9;
     border-radius: 5px;
     margin: 20px;
-    width: 40vw;
+    width: 290px;
     height: 30vh;
     resize: none;
     padding: 10px;
@@ -155,12 +138,12 @@ textarea {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: lightgray;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #submit {
     background-color: #fff1eb;
-    width: 18vw;
+    width: 150px;
     height: 30px;
     border: solid 3px lightgray;
     text-decoration: none;
@@ -174,26 +157,29 @@ textarea {
     box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, .1);
 }
 
-@media screen and (max-width: 1100px) {
-
-    #abigailOnThunderbird {
-        position: fixed;
-        right: 0;
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
     }
 
-    #bio {
-        z-index: 2;
-        width: 50vw;
-        height: auto;
-        position: absolute;
-        background-color: #fff1eb;
-        margin: 70vh 0 0 15vw;
-        padding: 20px;
-        text-align: justify;
+    .navPane {
+        height: 70px;
+        padding: 10px 0;
     }
 
-    ::placeholder {
-        font-size: 15px;
+    nav {
+        width: 100vw;
+    }
+
+    .titleText {
+        text-align: center;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    form {
+        height: calc(100vh - 80px);
+        margin-top: 80px;
     }
 
     .musicIcons {
@@ -201,4 +187,5 @@ textarea {
         height: 50px;
         margin-right: 15px;
     }
+
 }
